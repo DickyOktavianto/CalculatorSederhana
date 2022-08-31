@@ -84,4 +84,6 @@ body {
 .calculator .button span#clear,
 .calculator .button span#plus,
 .calculator .button span#equal {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.075), -5px -5px 10px white,
+    inset 5px 5px 10px rgba(0, 0, 0, 0.075);
 }
