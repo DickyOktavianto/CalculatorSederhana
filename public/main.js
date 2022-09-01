@@ -1,8 +1,8 @@
 // calculator
 
-let button = document.querySelector('button');
-let btn = document.querySelector('span');
-let value = document.querySelector('value');
+let button = document.querySelector('.button');
+let btn = document.querySelectorAll('span');
+let value = document.getElementById('value');
 
 for (let i = 0; i < btn.length; i++) {
   btn[i].addEventListener('click', function () {
@@ -12,7 +12,7 @@ for (let i = 0; i < btn.length; i++) {
       if (this.innerHTML == 'clear') {
         value = this.innerHTML = '';
       } else {
-        value.innerHTML == this.innerHTML;
+        value.innerHTML += this.innerHTML;
       }
     }
   });
